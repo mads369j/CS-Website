@@ -26,6 +26,20 @@ function showDefaultPatternImages(id){
     } 
 }
 
+function showDefaultAgentImages(id){
+    const defaultAgentImages = document.querySelector(".defaultAgentImages" +  id);
+    if (defaultAgentImages) {
+        defaultAgentImages.style.display = "flex";
+    } 
+}
+
+function showDefaultCapsuleImages(id){
+    const defaultCapsuleImages = document.querySelector(".defaultCapsuleImages" +  id);
+    if (defaultCapsuleImages) {
+        defaultCapsuleImages.style.display = "flex";
+    } 
+}
+
 function hideDefaultWeaponImages(){
     const defaultWeaponImages = document.querySelector(".defaultWeaponImages");
     defaultWeaponImages.style.display = "none";
@@ -44,4 +58,14 @@ function hideDefaultCollectionImages(){
 function hideDefaultPatternImages(){
     const defaultPatternImages = document.querySelector(".defaultPatternImages");
     defaultPatternImages.style.display = "none";
+}
+
+function hideDefaultAgentImages(){
+    const defaultAgentImages = document.querySelector(".defaultAgentImages");
+    defaultAgentImages.style.display = "none";
+}
+
+function hideDefaultCapsuleImages(){
+    const defaultCapsuleImages = document.querySelector(".defaultCapsuleImages");
+    defaultCapsuleImages.style.display = "none";
 }
