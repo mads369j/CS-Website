@@ -11,18 +11,16 @@ fetch(crates_apiUrl)
   .then(data => {
     console.log("Fetched data:", data);
     
-    // Create a JSON file download in the browser
-    const dataStr = JSON.stringify(data, null, 2); // Stringify the data with formatting
+    const dataStr = JSON.stringify(data, null, 2);
     const blob = new Blob([dataStr], { type: "application/json" });
     const url = URL.createObjectURL(blob);
     
-    // Create an anchor element to trigger the download
     const a = document.createElement("a");
     a.href = url;
-    a.download = "skinsData.json"; // The name of the downloaded file
+    a.download = "skinsData.json";
     document.body.appendChild(a);
-    a.click(); // Trigger the download
-    document.body.removeChild(a); // Remove the anchor element
+    a.click();
+    document.body.removeChild(a);
   })
   .catch(error => {
     console.error("Error fetching data:", error);

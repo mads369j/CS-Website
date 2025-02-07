@@ -60,27 +60,3 @@
     border-top-right-radius: 10px;
     text-align: center;
 }
-
-.rarity-box.covert{
-    background-color: #eb4b4b;
-}
-
-.rarity-box.classified {
-    background-color: #d32ce6;
-}
-
-.rarity-box.restricted {
-    background-color: #8847ff;
-}
-
-.rarity-box.milspec {
-    background-color: #4b69ff;
-}
-
-.rarity-box.Industrialgrade {
-    background-color: #5e98d9;
-}
-
-.rarity-box.consumergrade {
-    background-color: #b0c3d9;
-}
